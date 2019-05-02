@@ -34,7 +34,7 @@ def home():
 
 def feed():
 	if request.method=='GET' or request.method=='POST':
-		device feed() #not yet completed
+		#device feed() #not yet completed
 		response={
 		'connection':'local',
 		'status':'success',
@@ -56,7 +56,7 @@ def setupUser():
 		if email is None:
 			return{
 		'status':'error',
-		'message'='email field is required'
+		'message':'email field is required'
 		}
 
 	elif request.method=='POST':
