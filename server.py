@@ -33,7 +33,7 @@ def home():
 @app.route('/feed',methods=['GET','POST'])
 
 def feed():
-	if request.method=='GET' or request.method='POST':
+	if request.method=='GET' or request.method=='POST':
 		device feed() #not yet completed
 		response={
 		'connection':'local',
